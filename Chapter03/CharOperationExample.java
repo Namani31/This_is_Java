@@ -7,6 +7,8 @@ public class CharOperationExample {
         // c2 에 1을 더하면 c2는 int 타입 변환 되고 1과 연산 되므로 산출 타입이 int가 됨
         // 따라서 char 타입 변수 c3에 대입 불가
         // char c3 = c2 + 1; // 연산자 에러
+        // 강제 타입 변환해서 char 타입으로 얻어야 함
+        // char c3 = (char) (c2 + 1);
 
         System.out.println("c1: " + c1);
         System.out.println("c2: " + c2);
