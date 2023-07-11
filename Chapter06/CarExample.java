@@ -2,10 +2,10 @@ package Chapter06;
 
 public class CarExample {
     public static void main(String[] args) {
-        Car myCar = new Car();
-        myCar.keyTurnOn();
+        Car myCar = new Car("포르쉐");
+        Car yourCar = new Car("벤츠");
+
         myCar.run();
-        int speed = myCar.getSpeed();
-        System.out.println("현재 속도: " + speed + "km/h");
+        yourCar.run();
     }
 }
