@@ -1,13 +1,13 @@
 package Chapter06;
 
 public class Calculator {
-    // 정사각형의 넓이
-    double areaRectangle(double width) {
-        return width * width;
+    static double pi = 3.14159;
+
+    static int plus(int x, int y) {
+        return x + y;
     }
 
-    // 직사각형의 넓이
-    double areaRectangle(double width, double height) {
-        return width * height;
+    static int minus(int x, int y) {
+        return x - y;
     }
 }
