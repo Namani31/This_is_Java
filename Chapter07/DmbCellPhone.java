@@ -1,6 +1,6 @@
 package Chapter07;
 
-public class DmbCellPhone {
+public class DmbCellPhone extends CellPhone{
     // 필드
     int channel;
 
