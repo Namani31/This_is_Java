@@ -12,7 +12,7 @@ public class HankookTire extends Tire {
         ++accmulatedRotation;
         if (accmulatedRotation < maxRotation) {
             System.out.println(location + " HankookTire 수명: " + (maxRotation - accmulatedRotation) + "회");
-            return false;
+            return true;
         } else {
             System.out.println("*** " + location + " HankookTire 펑크 ***");
             return false;
