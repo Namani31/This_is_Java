@@ -25,7 +25,7 @@ public class CarExample {
                     car.frontRightTire = new KumhoTire("뒤오른쪽", 17);
                     break;
             }
-            System.out.printf("------------------------"); // 1회전 시 출력되는 내용을 구분
+            System.out.println("------------------------"); // 1회전 시 출력되는 내용을 구분
         }
     }
 }
