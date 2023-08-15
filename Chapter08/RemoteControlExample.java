@@ -2,11 +2,23 @@ package Chapter08;
 
 public class RemoteControlExample {
     public static void main(String[] args) {
-        // 인터페이스 객체 타입 변수 rc
-        RemoteControl rc;
+        // 익명 구현 객체 타입 변수인 rc
+        // new RemoteControl()이 인터페이스 자체를 생성자처럼 사용
+        RemoteControl rc = new RemoteControl() {
+            @Override
+            public void turnOn() {
 
-        // 인터페이스로 구현 객체 사용하기 위해 구현 객체 대입
-        rc = new Television();
-        rc = new Audio();
+            }
+
+            @Override
+            public void turnOFF() {
+
+            }
+
+            @Override
+            public void setVolume(int volume) {
+
+            }
+        };
     }
 }
