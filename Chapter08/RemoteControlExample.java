@@ -1,24 +1,17 @@
 package Chapter08;
 
+import Chapter06.Television;
+
 public class RemoteControlExample {
     public static void main(String[] args) {
-        // 익명 구현 객체 타입 변수인 rc
-        // new RemoteControl()이 인터페이스 자체를 생성자처럼 사용
-        RemoteControl rc = new RemoteControl() {
-            @Override
-            public void turnOn() {
+        RemoteControl rc = null;
 
-            }
+        rc = new Television();
+        rc.turnOn();
+        rc.turnOFF();
 
-            @Override
-            public void turnOFF() {
-
-            }
-
-            @Override
-            public void setVolume(int volume) {
-
-            }
-        };
+        rc = new Audio();
+        rc.turnOn();
+        rc.turnOFF();
     }
 }
