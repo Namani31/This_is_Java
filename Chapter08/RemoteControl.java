@@ -20,7 +20,7 @@ public interface RemoteControl {
     }
 
     // 정적 메소드, 객체가 없어도 인터페이스만으로도 호출 가능
-    static void ChangeBattery() {
+    static void changeBattery() {
         System.out.println("건전지를 교환합니다.");
     }
 }
