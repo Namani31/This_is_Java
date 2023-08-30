@@ -1,0 +1,19 @@
+package Chapter08;
+
+public class ImplementationC implements InterfaceC {
+    // InterfaceA와 InterfaceB의 실체 메소드도 있어야 함
+    public void methodA() {
+        System.out.println("ImplementationC-methodA() 실행");
+    }
+
+
+    @Override
+    public void methodB() {
+        System.out.println("ImplementationC-methodA() 실행");
+    }
+
+    @Override
+    public void methodC() {
+
+    }
+}
