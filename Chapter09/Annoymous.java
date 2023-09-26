@@ -1,37 +1,27 @@
 package Chapter09;
 
 public class Annoymous {
-    // 필드 초기값으로 대입
-    RemoteControl field = new RemoteControl() {
-        @Override
-        public void turnOn() {
-            System.out.println("TV를 켭니다.");
-        }
+    private int field;
 
-        @Override
-        public void turnOff() {
-            System.out.println("TV를 끕니다.");
-        }
-    };
+    public void method(final int arg1, int arg2) {
+        final int var1 = 0;
+        int var2 = 0;
 
-    void method1() {
-        // 로컬 변수 값으로 대입
-        RemoteControl localVar = new RemoteControl() {
+        field = 10;
+
+        // arg1 = 20; (x)
+        // arg2 = 20; (x)
+
+        // var1 = 30; (x)
+        // var2 = 30; (x)
+
+        Calculator calc = new Calculator() {
             @Override
-            public void turnOn() {
-                System.out.println("Audio를 켭니다.");
-            }
-
-            @Override
-            public void turnOff() {
-                System.out.println("Audio를 끕니다.");
+            public int sum() {
+                int result = field + arg1 + arg2 + var1 + var2;
+                return result;
             }
         };
-        // 로컬 변수 사용
-        localVar.turnOn();
-    }
-
-    void method2(RemoteControl rc) {
-        rc.turnOn();
+        System.out.println(calc.sum());
     }
 }
