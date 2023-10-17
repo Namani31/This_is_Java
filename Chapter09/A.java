@@ -13,7 +13,7 @@ class A {
 
     class B {
         void method() {
-            void field1 = 10;
+            field1 = 10;
             method1();
 
             field2 = 10;

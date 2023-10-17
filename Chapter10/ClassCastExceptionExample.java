@@ -18,5 +18,12 @@ public class ClassCastExceptionExample {
 }
 
 class Animal{}
+        // if (animal instaceof Dog) {
+            Dog dog = (Dog) animal; // ClassCastException 발생 가능
+        // }
+    }
+}
+
+class Animal {}
 class Dog extends Animal {}
 class Cat extends Animal {}
