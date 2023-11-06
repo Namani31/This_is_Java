@@ -18,4 +18,9 @@ public class Key {
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return number;
+    }
 }
