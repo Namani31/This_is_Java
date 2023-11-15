@@ -4,7 +4,7 @@ public class Member implements Cloneable {
     public String id;
     public String name;
     public String password;
-    public  int age;
+    public int age;
     public boolean adult;
 
     public Member(String id, String name, String password, int age, boolean adult) {
@@ -20,8 +20,7 @@ public class Member implements Cloneable {
 
         try {// clone() 메소드의 리턴 타입은 Object 이므로 Member 타입으로 캐스팅 해야 함
             cloned = (Member) clone();
-        } catch (CloneNotSupportedException e) {
-            return cloned;
-        }
+        } catch (CloneNotSupportedException e) { }
+        return cloned;
     }
 }
